@@ -48,6 +48,13 @@ class Application(Frame):
         self.randomButton = Button(self, text="Random Color", width=15, command=self.changeRandom)
         self.randomButton.grid(row=1, column=2)
 
+        #Input color options,for user reference
+        self.optionsLabel = Label(self, text="Color options:red, orange, yellow, green, blue, purple, pink", width=45)
+        self.optionsLabel.grid(row=3, column=0, columnspan=3)
+
+        self.optionsLabel = Label(self, text=" brown, gray, black", width=35)
+        self.optionsLabel.grid(row=4, column=0, columnspan=3)
+
         #exit button
         self.exitButton = Button(self, text="Exit", width=15, command=root.destroy)
         self.exitButton.grid(row=2, column=1)
