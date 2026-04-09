@@ -76,8 +76,7 @@ class Application(Frame):
         self["bg"] = colorName
     
 root = Tk()
+app = Application(master=root)
 root.title("Color App ")
 root.geometry("350x100")
-
-app = Application(master=root)
 app.mainloop()
